@@ -18879,6 +18879,10 @@ a.dropdown-item.active {
     background: url(../images/banner_contact.jpg) no-repeat center;
 }
 
+#status_error .bannerhny-content {
+    background: #000;
+}
+
 
 
 .main-slider .bannerhny-content::before {
