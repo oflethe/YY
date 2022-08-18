@@ -20230,6 +20230,9 @@ ul.gallery_agile li {
     padding: 35px 20px;
     border-radius: 4px;
     background: var(--bg-grey);
+    /* display: flex;
+    flex-direction: row;
+    justify-content: center; */
     display: grid;
     grid-template-columns: 1fr 5fr;
     grid-gap: 10px;
@@ -20267,6 +20270,21 @@ ul.gallery_agile li {
     font-weight: 600;
     display: inline-block;
     padding-left: 1.5em;
+}
+
+
+
+@media (max-width: 320px) {
+    .contact .cont-details h6 {
+        padding-left: 0;
+    }
+    
+    .contact .cont-top{
+        padding: 34px 15px 10px 10px;
+    }
+    .contact ul{
+        padding-left: 0;
+    }
 }
 
 .contact .cont-details span {
