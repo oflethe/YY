@@ -20283,7 +20283,8 @@ ul.gallery_agile li {
         padding: 34px 15px 10px 10px;
     }
     .contact ul{
-        padding-left: 0;
+        padding-left: 15px;
+        padding-top: 5%;
     }
 }
 
