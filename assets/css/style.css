@@ -307,6 +307,16 @@ body {}
   }
 }
 
+
+@media screen and (max-width: 328px) {
+
+  .slide-text h1 {
+    font-size: 25px;
+    letter-spacing: 0.02em;
+  }
+
+}
+
 /* slide background */
 
 .slide1 {
