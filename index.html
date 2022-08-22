@@ -493,9 +493,13 @@
                             <h3>睡眠呼吸治療器(PCBA)</h3>
                         </div>
                     </div>
-                    <div class="swiper-pagination"></div>
-                </div>
 
+
+                    
+
+                </div>
+                <div class="swiper-button-next2"></div>
+                <div class="swiper-button-prev2"></div>
 
 
 
@@ -648,7 +652,7 @@
                             </h4>
                         </div>
                         <p> 位於桃園的專業SMT代工電子公司<br>
-                            從1989年創立以來，跟隨時代洪流不斷成長。
+                            從1979年創立以來，跟隨時代洪流不斷成長。
                             盈溢電子有著豐富的專業知識、多年的實務經驗，
                             產能上不斷提升製程能力、更新設備，
                             導入各式認證與品質系統，
@@ -831,6 +835,8 @@
         /*代工產品輪播*/
 
         var mySwiper = new Swiper('.product_swiper', {
+            observer: true,
+            observeParents: true,
             slidesPerView: 4,
             breakpoints: {
                 992: {
@@ -856,10 +862,14 @@
             centeredSlides: true,
             //自動撥放
             autoplay: {
-                delay: 2500,
+                delay: 1000,
                 disableOnInteraction: true,
             },
-
+            // 如果需要前進後退
+            navigation: {
+                nextEl: '.swiper-button-next2',
+                prevEl: '.swiper-button-prev2',
+            },
             // cubeEffect: {
             //     shadow: true, // 顯示陰影
             //     slideShadows: true, // 當滑動時，則顯示動陰影
