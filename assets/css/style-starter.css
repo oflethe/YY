@@ -18810,6 +18810,16 @@ a.dropdown-item.active {
 
 }
 
+@media only screen and (max-width: 441px) {
+
+    .mobile-position {
+
+        top: -3px;
+
+        }
+
+}
+
 /*---//Header-Style--*/
 
 
