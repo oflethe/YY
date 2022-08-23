@@ -18810,7 +18810,7 @@ a.dropdown-item.active {
 
 }
 
-@media only screen and (max-width: 441px) {
+@media only screen and (max-width: 414px) {
 
     .mobile-position {
 
@@ -20678,7 +20678,7 @@ ul.gallery_agile li {
     font-weight: 900;
 }
 
-
+/*footer 傳真*/
 #footer .footer-top .footer-links ul li:nth-last-child(2)::before{
     
     font-family: "Font Awesome 5 Free";
