@@ -20277,10 +20277,13 @@ ul.gallery_agile li {
 }
 
 
-
 @media (max-width: 320px) {
     .contact .cont-details h6 {
         padding-left: 0;
+    }
+
+    .contact .cont-details h6 ::before{
+        content: "123";
     }
     
     .contact .cont-top{
@@ -20297,6 +20300,23 @@ ul.gallery_agile li {
     font-weight: 600;
     padding-left: 13px;
 }
+
+
+@media (max-width: 414px) {
+
+    .contact .cont-details span {
+        padding-left: 31px;
+    }
+}
+
+
+@media (max-width: 320px) {
+
+    .contact .cont-details span {
+        padding-left: 4px;
+    }
+}
+
 
 .contact .cont-details p,
 .cont-details p a {
