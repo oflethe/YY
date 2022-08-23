@@ -20643,16 +20643,9 @@ ul.gallery_agile li {
     padding-top: 0;
 }
 
-#footer .footer-top .footer-links ul li::before{
-    
-    font-family: "Font Awesome 5 Free";
-    content: '\f001';
-    left: -10px;
-    bottom: 0px;
-    position: relative;
 
-}
 
+/*footer 信箱*/
 #footer .footer-top .footer-links ul li:first-child::before{
     
     font-family: "Font Awesome 5 Free";
@@ -20663,20 +20656,22 @@ ul.gallery_agile li {
    
 }
 
-#footer .footer-top .footer-links ul li:last-child::before{
+/*footer 電話*/
+#footer .footer-top .footer-links ul li:nth-last-child(4)::before{
     
     font-family: "Font Awesome 5 Free";
-    content: '\f3c5';
+    content: '\f879';
     left: -14px;
     bottom: 0px;
     position: relative;
     font-weight: 900;
 }
 
-#footer .footer-top .footer-links ul li:nth-last-child(4)::before{
+/*footer 電話*/
+#footer .footer-top .footer-links ul li:nth-last-child(3)::before{
     
-    font-family: "Font Awesome 5 Free";
-    content: '\f879';
+    
+    content: '　';
     left: -14px;
     bottom: 0px;
     position: relative;
@@ -20693,6 +20688,19 @@ ul.gallery_agile li {
     position: relative;
     font-weight: 900;
 }
+
+
+/*footer 地址*/
+#footer .footer-top .footer-links ul li:last-child::before{
+    
+    font-family: "Font Awesome 5 Free";
+    content: '\f3c5';
+    left: -14px;
+    bottom: 0px;
+    position: relative;
+    font-weight: 900;
+}
+
 
 #footer .footer-top .footer-links ul a {
     color: var(--font-color);
