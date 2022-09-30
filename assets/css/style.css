@@ -406,6 +406,11 @@ body {}
   font-size: 10pt;
 }
 
+.titlearea .spanPureEn {
+  padding-left: 35px;
+  font-size: 10pt;
+}
+
 .navbar_spanlink {
   color: #000 !important;
 }
@@ -413,6 +418,10 @@ body {}
 
 @media only screen and (max-width:545px) {
   .titlearea .spanEn {
+    display: none;
+  }
+
+  .titlearea .spanPureEn {
     display: none;
   }
 }
