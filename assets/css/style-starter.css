@@ -18747,7 +18747,7 @@ a.dropdown-item.active {
     .mobile-position {
     position: absolute;
     right: 60px;
-    top: 6px;
+    top: 7.5px;
     font-size: 16pt;
     }
 
@@ -18814,7 +18814,7 @@ a.dropdown-item.active {
 
     .mobile-position {
 
-        top: -3px;
+        top: -4px;
 
         }
 
