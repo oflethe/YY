@@ -1075,6 +1075,10 @@ a:active {
 
 /*Equipmemt*/
 
+/*指定圖片高度為197px 避免跑版*/
+.h-197 img{
+  height: 197px;
+}
 
 .Equipmemt-img img {
   transition: all .2s ease-in-out;
