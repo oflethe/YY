@@ -395,9 +395,9 @@ body {}
   text-align: start !important;
 }
 
-.titlearea h1 {
+.titlearea_title {
 
-  line-height: auto;
+  line-height: 0;
   margin-bottom: 0;
 }
 
