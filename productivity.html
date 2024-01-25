@@ -296,11 +296,13 @@
 
 
                 <div class="title-content text-center mb-lg-5 mt-4 ">
-                    <p>生產能力方面，目前配置有8條SMT Line，單日總產能可達1050萬點；<br>DIP現有3條生產線，單日總產能約3200片基板；以及組包線3條，可達到每天約600台成品組包裝的單日總產能。
+                    <p>生產能力方面，目前配置有<span class="text-primary">8</span>條SMT Line，單日總產能可達<span class="text-primary">1050</span>萬點；
+                    <br>DIP現有3條生產線，單日總產能約<span class="text-primary">3200</span>片基板；以及組包線<span class="text-primary">3</span>條，可達到每天約<span class="text-primary">600</span>台成品組包裝的單日總產能。
                     </p>
                 </div>
 
-                <div class="table table-responsive text-center ">
+                <!--表格-->
+                <!-- <div class="table table-responsive text-center ">
                     <table class="table table-hover table-bordered">
                         <thead>
                             <tr>
@@ -331,19 +333,74 @@
                             </tr>
                         </tbody>
                     </table>
-                </div>
+                </div> -->
+                <!--表格-->
+
+                <section id="counts" class="counts">
+                    <div class="container">
+                        <div class="row">
+
+                            <div class="col-lg-4 col-md-4 stats_info counter_grid"  id="showline01">
+                                <div class="count-box">
+                                    <i class="fa fa-spinner" aria-hidden="true"></i>
+                                    <h3>SMT LINES</h3>
+                                    <p class="counter counter_line text-primary">8</p>
+                                    <!-- <span class="fw-5">Lines</span> -->
+                                    <hr>
+                                    <p><span class="text-primary">10.5</span> Million chips / Day</p>
+                                    <!-- <p>10.5 million chips/天</p> -->
+                                </div>
+                            </div>
+            
+                            <div class="col-lg-4 col-md-4 mt-5 mt-md-0 stats_info counter_grid" id="showline02">
+                                <div class="count-box">
+                                    <i class="fa fa-spinner" aria-hidden="true"></i>
+                                    <h3>DIP LINES</h3>
+                                    <p class="counter counter_line text-primary">3</p>
+                                    <!-- <span class="fw-5">Lines</span> -->
+                                    <hr>
+                                    <p><span class="text-primary">3200</span> PCS / Day</p>
+                                    <!-- <p>10.5 million chips/天</p> -->
+                                </div>
+                            </div>
+            
+                            <div class="col-lg-4 col-md-4 mt-5 mt-lg-0 stats_info counter_grid" id="showline03">
+                                <div class="count-box">
+                                    <i class="fas fa-spinner"></i>
+                                    <h3>Ass'y LINES</h3>
+                                    <p class="counter counter_line text-primary">3</p>
+                                    <!-- <span class="fw-5">Lines</span> -->
+                                    <hr>
+                                    <p><span class="text-primary">600</span> PCS / Day</p>
+                                    <!-- <p>10.5 million chips/天</p> -->
+                                </div>
+                            </div>
+            
+
+            
+                        </div>
+            
+                    </div>
+                </section>
+
+              
+                
+            
+
+
                 </div>
 
                 <div class="proimg">
                     <!-- SMT LINE -->
-                    <div class="row" data-aos="fade-left">
+                    <div class="row" data-aos="fade-left" id="line1">
 
                         <div class="Equipmemt-section-title text-left">
                             <h2>SMT Line</h2>
                         </div>
                         <div class="col-lg-5 col-md-5 col-sm-12 mb-5">
-                            <img src="assets/images/production01.png" class="img-fluid img-responsive " alt="SMT">
+                            <img src="assets/images/production01.png" class="img-fluid img-responsive" alt="SMT">
                         </div>
+                        
                         <div class="col-lg-7  col-md-7 col-sm-12 pl-lg-4 mb-5">
 
                             <div class="text-left mb-5">
@@ -352,7 +409,10 @@
                                     Line的AOI配置，可生產最小零件SIZE-03015和POP製程。</p>
                                 <p>YAMAHA系列Mounter共3條生產線，搭載DEK印刷機Reflow選用TAMURA，3條線都有On
                                     Line的AOI配置，可生產最小零件SIZE-01005和POP製程。</p>
+
                                 <p>全時氮氣供應生產，產品100% A.O.I.檢驗。</p>
+                                <p><a href="#">查看更多資訊</a></p>
+                                
                             </div>
 
 
@@ -360,7 +420,7 @@
                                 <div class="stats_left col-md-6 col-sm-6">
                                     <div class="counter_grid text-center">
                                         <div class="icon_info">
-                                            <p class="counter">8</p>
+                                            <p class="counter_line">8</p>
                                             <h4>Lines</h4>
                                             <p class="counter-para">for SMT</p>
                                         </div>
@@ -383,9 +443,38 @@
 
                     </div>
 
+                    <!-- SMT LINE 2   -->
+                    <!-- <div class="row " data-aos="fade-right" id="line2">
+
+                       
+
+                        <div class="col-lg-7  col-md-7 col-sm-12 pl-lg-4">
+
+                            <div class="text-left mb-5">
+
+                                <p>多年以來，本公司的POP製程已臻成熟。我們以先進的YAMAHA系列Mounter和DEK印刷機打造出高效的生產線。無論多麼複雜的POP製程，我們都能製作。</p>
+                                <p>選擇我們，選擇專業和可靠的SMT POP製程合作夥伴</p>
+
+                            </div>
+
+
+
+                        </div>
+                        <div class="col-lg-5 col-md-5 col-sm-12 mb-5">
+
+                            <img src="assets/images/POP.jpg" class="img-fluid img-responsive" alt="SMT">
+
+
+                        </div>
+
+
+
+
+                    </div> -->
+
 
                     <!-- DIP LINE -->
-                    <div class="row " data-aos="fade-right">
+                    <div class="row " data-aos="fade-right" id="line2">
 
                         <div class="Equipmemt-section-title text-left mt-5">
                             <h2>DIP Line</h2>
@@ -406,7 +495,7 @@
                                 <div class="stats_left col-md-6 col-sm-6">
                                     <div class="counter_grid text-center">
                                         <div class="icon_info">
-                                            <p class="counter">3</p>
+                                            <p class="counter_line">3</p>
                                             <h4>Lines</h4>
                                             <p class="counter-para">for DIP</p>
                                         </div>
@@ -437,7 +526,7 @@
 
 
                     <!-- Ass'y -->
-                    <div class="row " data-aos="fade-left">
+                    <div class="row " data-aos="fade-left" id="line3">
 
                         <div class="Equipmemt-section-title text-left mt-5">
                             <h2>Assembly Line</h2>
@@ -461,7 +550,7 @@
                                 <div class="stats_left col-md-6 col-sm-6">
                                     <div class="counter_grid text-center">
                                         <div class="icon_info">
-                                            <p class="counter">3</p>
+                                            <p class="counter_line">3</p>
                                             <h4>Lines</h4>
                                             <p class="counter-para">for Ass'y</p>
                                         </div>
@@ -641,7 +730,15 @@
     <script src="assets/js/jquery.waypoints.min.js"></script>
     <script src="assets/js/jquery.countup.js"></script>
     <script>
-        $('.counter').countUp();
+       $('.counter').countUp({
+        duration: 2000, // 設定動畫持續時間為2秒（2000毫秒）
+        });
+
+       $('.counter_line').countUp({
+        duration: 300, // 設定動畫持續時間為1秒（1000毫秒）
+        });
+
+
 
     </script>
 
@@ -723,7 +820,34 @@
             $('.agile_portfolio_grid a').Chocolat();
         });
 
+        document.addEventListener('DOMContentLoaded', function() {
+    // 獲取按鈕
+    var button1 = document.getElementById('showline01');
+    var button2 = document.getElementById('showline02');
+    var button3 = document.getElementById('showline03');
 
+    // 添加監聽
+    button1.addEventListener('click', function() {
+      // 使用 JavaScript 滾動到目標
+      var targetElement = document.getElementById('line1');
+      targetElement.scrollIntoView({ behavior: 'smooth' });
+    });
+
+    button2.addEventListener('click', function() {
+      // 使用 JavaScript 滾動到目標
+      var targetElement = document.getElementById('line2');
+      targetElement.scrollIntoView({ behavior: 'smooth' });
+    });
+
+    button3.addEventListener('click', function() {
+      // 使用 JavaScript 滾動到目標
+      var targetElement = document.getElementById('line3');
+      targetElement.scrollIntoView({ behavior: 'smooth' });
+    });
+
+
+
+  });
 
     </script>
 

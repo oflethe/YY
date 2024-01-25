@@ -43,7 +43,14 @@
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
 
 
-
+    <style>
+        .swiper-button-prev,
+    .swiper-button-next {
+        position: absolute!important;
+        top: 40%!important;
+        transform: translateY(-50%)!important;
+    }
+    </style>
 
  <meta name="google-site-verification" content="Mb_UtU3A-9o4UV1lcOBr0QENIeM6CPkPuSuAQd4REX8" />
 
@@ -68,45 +75,41 @@
 
 
 <!--Data-->
- <script type="application/ld+json">
-  {
-
+<script type="application/ld+json">
     {
-        "@context": "https://www.schema.org",
-        "@type": "LocalBusiness",
-        "name": "Ying-Yi Electronics co., Ltd.",
-        "url": "https://www.yingyi.com.tw/",
-        "logo": "https://www.yingyi.com.tw/assets/images/logo.png",
-        "image": "https://www.yingyi.com.tw/assets/images/production01.png",
-        "description": "SMT OEM,DIP OEM ,PCB OEM,ODM Made in Taiwan,SMT Assembly foundry,electronics & DIP Halogen-free Lead-free Taiwan SMT,DIP,PCB OEM ODM,ISO Certificate and Ying-Yi provides high-quality SMT OEM、DIP processing for you!",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "No.6, Aly.60, Ln.507, Chueng-Shan Rd., Taoyuan Dist., Taoyuan City, Taiwan, R.O.C.",
-          "addressLocality": "Taoyuan Dist",
-          "addressRegion": "Taoyuan City",
-          "postalCode": "330",
-          "addressCountry": "Taiwan"
-        },
-        "hasMap": "https://maps.app.goo.gl/iSjFUHg2YTpDNv5f6",
-        "openingHours": "Mo, Tu, We, Th, Fr -",
-        "contactPoint": {
-          "@type": "ContactPoint",
-           
-          "contactType": "Sales",
-          "email": "yingyi_service@yingyi.com.tw",
-        }
+      "@context": "https://www.schema.org",
+      "@type": "LocalBusiness",
+      "name": "Ying-Yi Electronics co., Ltd.",
+      "url": "https://www.yingyi.com.tw/",
+      "logo": "https://www.yingyi.com.tw/assets/images/logo.png",
+      "image": "https://www.yingyi.com.tw/assets/images/production01.png",
+      "description": "SMT OEM,DIP OEM ,PCB OEM,ODM Made in Taiwan,SMT Assembly foundry,electronics & DIP Halogen-free Lead-free Taiwan SMT,DIP,PCB OEM ODM,ISO Certificate and Ying-Yi provides high-quality SMT OEM、DIP processing for you!",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "No.6, Aly.60, Ln.507, Chueng-Shan Rd., Taoyuan Dist., Taoyuan City, Taiwan, R.O.C.",
+        "addressLocality": "Taoyuan Dist",
+        "addressRegion": "Taoyuan City",
+        "postalCode": "330",
+        "addressCountry": "Taiwan"
       },
-      {
-          "@context": "http://schema.org",
-          "@type": "Article",
-          "headline": "Business Items",
-          "author": "Ying-Yi Electronics co., Ltd.",
-          "datePublished": "2024-01-11",
-          "image": "https://www.yingyi.com.tw/assets/images/corporation.jpg",
-          "articleBody": "Our Business items include BOARDS ASSEMBLY.OEM(INCLUDS.ICT.ATE.AOI.X-RAY.TEST),SMT & DIP LEAD FREE HALOGEN FREE PROCESS"
+      "hasMap": "https://maps.app.goo.gl/iSjFUHg2YTpDNv5f6",
+      "openingHours": "Mo, Tu, We, Th, Fr -",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "Sales",
+        "email": "yingyi_service@yingyi.com.tw"
       }
-}
-</script>
+    },
+    {
+      "@context": "http://schema.org",
+      "@type": "Article",
+      "headline": "Business Items",
+      "author": "Ying-Yi Electronics co., Ltd.",
+      "datePublished": "2024-01-11",
+      "image": "https://www.yingyi.com.tw/assets/images/corporation.jpg",
+      "articleBody": "Our Business items include BOARDS ASSEMBLY.OEM(INCLUDS.ICT.ATE.AOI.X-RAY.TEST),SMT & DIP LEAD FREE HALOGEN FREE PROCESS"
+    }
+  </script>
 <!--Data-->
 
 </head>
@@ -386,6 +389,122 @@
                             </div>
                         </div>
 
+
+
+
+                                        <!--產品slider-->   
+                
+                    <!--產品-->
+    <!-- <section id="slideproducts" class="slideproducts"></section>-->
+
+    <div  id="slideproducts" class="services-block_grids_bottom mb-5 slideproducts">
+        <div class="container">
+            <div class="Equipmemt-section-title text-left">
+                <!-- <span class="sp-color2">O.E.M. Products</span> -->
+                <h2>O.E.M. Products</h2>
+            </div>
+
+           
+            <div class="swiper product_swiper col-12 img-responsive">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="row product_details">
+                            <img src="assets/images/product01.jpg" alt="POS Cash Register System (PCBA)">
+                            <h3>POS Cash Register System (PCBA)</h3>
+                        </div>
+                    </div>
+            
+                    <div class="swiper-slide">
+                        <div class="row product_details">
+                            <img src="assets/images/product02.jpg" alt="Smartphone (PCBA)">
+                            <h3>Smartphone (PCBA)</h3>
+                        </div>
+                    </div>
+            
+                    <div class="swiper-slide">
+                        <div class="row product_details">
+                            <img src="assets/images/product03.jpg" alt="IP Camera (PCBA)">
+                            <h3>IP Camera (PCBA)</h3>
+                        </div>
+                    </div>
+            
+                    <div class="swiper-slide">
+                        <div class="row product_details">
+                            <img src="assets/images/product04.jpg" alt="LCD TV (PCBA)">
+                            <h3>LCD TV (PCBA)</h3>
+                        </div>
+                    </div>
+            
+                    <div class="swiper-slide">
+                        <div class="row product_details">
+                            <img src="assets/images/product05.jpg" alt="Disk Array System (PCBA)">
+                            <h3>Disk Array System (PCBA)</h3>
+                        </div>
+                    </div>
+            
+                    <div class="swiper-slide">
+                        <div class="row product_details">
+                            <img src="assets/images/product06.jpg" alt="Various Motherboards">
+                            <h3>Various Motherboards</h3>
+                        </div>
+                    </div>
+            
+                    <div class="swiper-slide">
+                        <div class="row product_details">
+                            <img src="assets/images/product07.jpg" alt="Industrial and Personal PCs">
+                            <h3>Industrial and Personal PCs</h3>
+                        </div>
+                    </div>
+            
+                    <div class="swiper-slide">
+                        <div class="row product_details">
+                            <img src="assets/images/product08.jpg" alt="Network Equipment (PCBA)">
+                            <h3>Network Equipment (PCBA)</h3>
+                        </div>
+                    </div>
+            
+                    <div class="swiper-slide">
+                        <div class="row product_details">
+                            <img src="assets/images/product09.jpg" alt="Heart Rate Watch (PCBA)">
+                            <h3>Heart Rate Watch (PCBA)</h3>
+                        </div>
+                    </div>
+            
+                    <div class="swiper-slide">
+                        <div class="row product_details">
+                            <img src="assets/images/product10.jpg" alt="Barcode Scanner (PCBA)" class="img-fluid radius-image">
+                            <h3>Barcode Scanner (PCBA)</h3>
+                        </div>
+                    </div>
+            
+                    <div class="swiper-slide">
+                        <div class="row product_details">
+                            <img src="assets/images/product11.jpg" alt="Medical Testing Device (PCBA)" class="img-fluid radius-image">
+                            <h3>Medical Testing Device (PCBA)</h3>
+                        </div>
+                    </div>
+            
+                    <div class="swiper-slide">
+                        <div class="row product_details">
+                            <img src="assets/images/product12.jpg" alt="Sleep Apnea Therapy Device (PCBA)">
+                            <h3>Sleep Apnea Therapy Device (PCBA)</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+
+
+        <div class="product_pagination col-12">
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+     </div>
+    </div>
+    <!--/product-Section-->
+
+
+                <!--產品slider-->   
 
 
                         <!-- SMT & DIP無鉛無鹵製程 -->
@@ -804,6 +923,98 @@
     <!-- /js for portfolio lightbox -->
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/swiper-bundle.min.js"></script>
+
+        <!--JS-->
+
+    <script>
+        /*banner*/
+        var swiper = new Swiper(".swiper-banner", {
+            observer: true,
+            observeParents: true,
+            spaceBetween: 30,
+            effect: "fade",
+            slidesPerView: 1,
+            loop: true,
+            centeredSlides: true,
+            autoplay: {
+                delay: 4000,
+                disableOnInteraction: false,
+            },
+            //分頁
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'bullets',
+                clickable: 'true'
+            },
+            // 如果需要前進後退
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+        });
+
+        /*代工產品輪播*/
+
+        var mySwiper = new Swiper('.product_swiper', {
+            observer: true,
+            observeParents: true,
+            breakpoints: {
+                992: {
+                    slidesPerView: 4,
+                    spaceBetween: 10
+                },
+                //當寬度大於等於700
+                700: {
+                    slidesPerView: 2,
+                    spaceBetween: 40
+                },
+                //當寬度大於等於320
+                320: {
+                    slidesPerView: 1,
+                    spaceBetween: 10
+                }
+            },
+            autoHeight: true,
+            //direction: 'vertical', // 垂直
+            grabCursor: true,
+            loop: true, // 循環
+            centeredSlides: true,
+            //自動撥放
+            autoplay: {
+                delay: 1000,
+                disableOnInteraction: true,
+            },
+            // 如果需要前進後退
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            // cubeEffect: {
+            //     shadow: true, // 顯示陰影
+            //     slideShadows: true, // 當滑動時，則顯示動陰影
+            //     shadowOffset: 20, // 陰影偏移
+            //     shadowScale: 0.94, // 陰影比例
+            // },
+                
+
+            // 如果需要滾動條
+            //   scrollbar: {
+            //     el: '.swiper-scrollbar',
+            //   },
+        });
+
+
+        // 滑鼠滑入會停止
+
+        $(".product_swiper").mouseenter(function () {
+            mySwiper.autoplay.stop();
+        });
+
+        $(".product_swiper").mouseleave(function () {
+            mySwiper.autoplay.start();
+        });
+    </script>
 
     <!--JS-->
 
