@@ -120,7 +120,7 @@
                 <div class="container-fluid">
                     <div class="titlearea">
                         <div class="titlearea_title"><a class="navbar-brand" href="index_en.html">
-                                <span><img src="https://www.yingyi.com.tw/assets/images/icon.ico" alt="Ying-Yi"> Ying-Yi </span>
+                                <span><img src="../assets/images/icon.ico" alt="Ying-Yi"> Ying-Yi </span>
                             </a></div>
 
                        <a href="index_en.html" class="navbar_spanlink"><span class="fw-bold spanPureEn">Electronics
@@ -590,11 +590,19 @@
     <script src="assets/js/aosindex.js"></script>
     <!--light-box-files -->
     <script src="assets/js/jquery.chocolat.js"></script>
-    <script type="text/javascript">
+ <script type="text/javascript">
         $(function () {
             $('.agile_portfolio_grid a').Chocolat();
         });
 
+        // 檢查視窗寬度是否大於一般手機的解析度
+        if (window.innerWidth > 768 && window.innerWidth < 1300) {
+    // 移除所有具有 data-aos 相關屬性的元素
+    document.querySelectorAll('[data-aos]').forEach(function(element) {
+        element.removeAttribute('data-aos');
+        element.removeAttribute('data-aos-duration');
+    });
+}
 
 
     </script>

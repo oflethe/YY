@@ -120,7 +120,7 @@
                 <div class="container-fluid">
                     <div class="titlearea">
                         <div class="titlearea_title"><a class="navbar-brand" href="index.html">
-                                <span><img src="https://www.yingyi.com.tw/assets/images/icon.ico" alt="盈溢電子"> 盈溢電子</span>
+                                <span><img src="../assets/images/icon.ico" alt="盈溢電子"> 盈溢電子</span>
                             </a></div>
 
                         <a href="index.html" class="navbar_spanlink"><span class="fw-bold spanEn">Ying-Yi Electronics
@@ -228,8 +228,17 @@
                                     <a class="nav-link" href="certificate.html">品質認證</a>
                                 </li>
 
-                                <li class="nav-item me-lg-4">
-                                    <a class="nav-link scroll" href="contact.html">聯絡我們</a>
+                               <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown5" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">聯絡我們 <span
+                                            class="fa fa-angle-down ms-1"></span>
+                                    </a>
+                                    
+
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                                    <li><a class="dropdown-item pt-2 scroll" href="contact.html">聯絡我們</a></li>
+                                    <li><a class="dropdown-item scroll" href="ContactUs.html">諮詢表單</a></li>
+                                </ul>
                                 </li>
 
                                 <li class="nav-item dropdown" id="lan_drp">
@@ -524,11 +533,19 @@
     <script src="assets/js/aosindex.js"></script>
     <!--light-box-files -->
     <script src="assets/js/jquery.chocolat.js"></script>
-    <script type="text/javascript">
+ <script type="text/javascript">
         $(function () {
             $('.agile_portfolio_grid a').Chocolat();
         });
 
+        // 檢查視窗寬度是否大於一般手機的解析度
+        if (window.innerWidth > 768 && window.innerWidth < 1300) {
+    // 移除所有具有 data-aos 相關屬性的元素
+    document.querySelectorAll('[data-aos]').forEach(function(element) {
+        element.removeAttribute('data-aos');
+        element.removeAttribute('data-aos-duration');
+    });
+}
 
 
     </script>

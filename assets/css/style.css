@@ -1830,8 +1830,134 @@ p.lead {
 }
 
 /*--//area--*/
+
 /*index area02*/
 
+/* Style for the floating button */
+.contact-button {
+  position: fixed;
+  bottom: 75px;
+  right: 20px;
+  z-index: 1000;
+}
+
+.contact-button a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 42px;
+  height: 42px;
+  background-color: var(--secondary-color);
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 6px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s;
+}
+
+.contact-button a:hover {
+  background-color: var(--secondary-color);
+  color: #fff;
+}
+
+
+/*----*/
+
+.contact-button2 {
+  position: fixed;
+  bottom: 300px;
+  right: 0px;
+  z-index: 1000;
+}
+
+.contact-button2 a {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 45px;
+  height: 150px;
+  background-color: var(--secondary-color);
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 6px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s;
+  writing-mode: vertical-lr; /* 將文字垂直排列 */
+  font-size: 14pt;
+  letter-spacing: 1px;
+  
+}
+
+.contact-button2 a:hover {
+  background-color: var(--secondary-color);
+  color: #fff;
+}
+
+
+
+@media screen and (max-width:1599px) {
+  .contact-button2 {
+ 
+    bottom: 200px;
+  
+  }
+}
+
+
+/**/
+
+.OnlineContact h3
+{
+
+color:var(--primary-color);
+
+}
+
+.OnlineContact ul
+{
+
+  border-left:1px solid var(--primary-color);
+
+
+
+}
+
+.OnlineContact li a
+{
+  line-height: 26px;
+  margin-bottom: 0;
+  color:rgba(0, 0, 0);
+
+}
+
+.OnlineContact i
+{
+  line-height: 26px;
+  color: rgba(0, 0, 0);
+    margin-bottom: 0;
+    margin-right: 10px;
+    box-shadow: 0px 2px 25px rgb(0 0 0 / 10%);
+
+}
+
+.thanksArea i
+{
+
+font-size: 150px;
+
+
+}
+
+.thanksArea h1
+{
+
+  font-size: 70px;
+  
+  
+  }
 
 /* ---- particles.js container ---- */
 

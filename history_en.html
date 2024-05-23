@@ -128,7 +128,7 @@
                     <div class="container-fluid">
                         <div class="titlearea">
                             <div class="titlearea_title"><a class="navbar-brand" href="index_en.html">
-                                    <span><img src="https://www.yingyi.com.tw/assets/images/icon.ico" alt="Ying-Yi"> Ying-Yi </span>
+                                    <span><img src="../assets/images/icon.ico" alt="Ying-Yi"> Ying-Yi </span>
                                 </a></div>
     
                            <a href="index_en.html" class="navbar_spanlink"><span class="fw-bold spanPureEn">Electronics
@@ -169,7 +169,7 @@
                             aria-labelledby="offcanvasNavbarLabel">
                             <div class="offcanvas-header">
                                 <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><img
-                                        src="https://www.yingyi.com.tw/assets/images/icon.ico" alt="盈溢電子Ying-Yi">Ying-Yi</h5>
+                                        src="../assets/images/icon.ico" alt="盈溢電子Ying-Yi">Ying-Yi</h5>
                                 <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
                                     aria-label="Close"></button>
                             </div>
@@ -712,6 +712,13 @@
                 <a href="#" class="instagram"><i class="fab fa-instagram"></i></a>
             </div> -->
         </div>
+
+        <!-- Floating Contact Us Button -->
+    <div class="contact-button">
+        <a href="ContactUs_en.html" href="聯絡我們" target="_blank" ><i class="fa fa-phone" aria-hidden="true"></i>
+        </a>
+    </div>
+
         <button onclick="topFunction()" id="movetop" title="Go to top" style="display: block;">
             <span class="fa fa-angle-up"></span>
         </button>
@@ -770,7 +777,31 @@
             });
         });
 
+
+       
+        // Ensure elements are visible by default and animate on scroll
+        document.addEventListener('DOMContentLoaded', (event) => {
+            const elements = document.querySelectorAll('[data-aos]');
+            elements.forEach(element => {
+                element.style.opacity = '1';
+                element.style.transition = 'none';
+            });
+        });
+
+
+// 檢查視窗寬度是否大於一般手機的解析度
+if (window.innerWidth > 768 && window.innerWidth < 1300) {
+    // 移除所有具有 data-aos 相關屬性的元素
+    document.querySelectorAll('[data-aos]').forEach(function(element) {
+        element.removeAttribute('data-aos');
+        element.removeAttribute('data-aos-duration');
+    });
+}
+
+
     </script>
+
+    
 
     <script src="assets/js/particles.js"></script>
     <script src="assets/js/app.js"></script>

@@ -120,7 +120,7 @@
                 <div class="container-fluid">
                     <div class="titlearea">
                         <div class="titlearea_title"><a class="navbar-brand" href="index_en.html">
-                                <span><img src="https://www.yingyi.com.tw/assets/images/icon.ico" alt="Ying-Yi"> Ying-Yi </span>
+                                <span><img src="../assets/images/icon.ico" alt="Ying-Yi"> Ying-Yi </span>
                             </a></div>
 
                        <a href="index_en.html" class="navbar_spanlink"><span class="fw-bold spanPureEn">Electronics
@@ -475,6 +475,12 @@
                 <a href="#" class="instagram"><i class="fab fa-instagram"></i></a>
             </div> -->
         </div>
+
+             <!-- Floating Contact Us Button -->
+    <div class="contact-button2">
+        <a href="ContactUs_en.html" href="Contact Us" target="_blank" ><i class="fa fa-phone" aria-hidden="true"></i>Contact Us
+        </a>
+    </div>
         <button onclick="topFunction()" id="movetop" title="Go to top" style="display: block;">
             <span class="fa fa-angle-up"></span>
         </button>
@@ -626,13 +632,27 @@
 
 
 
+// 檢查視窗寬度是否大於一般手機的解析度
+if (window.innerWidth > 768 && window.innerWidth < 1300) {
+    // 移除所有具有 data-aos 相關屬性的容器
+    document.querySelectorAll('.container[data-aos]').forEach(function(element) {
+        element.removeAttribute('data-aos');
+        element.removeAttribute('data-aos-duration');
+    });
+}
+
+
     </script>
+
+    
 
     <!-- /js for portfolio lightbox -->
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/swiper-bundle.min.js"></script>
 
     <!--JS-->
+
+
 
 </body>
 

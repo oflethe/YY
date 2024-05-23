@@ -18644,8 +18644,11 @@ a.dropdown-item.active {
 }
 
 
+
 /*--//serach--*/
 @media only screen and (max-width: 992px) {
+
+
     header.nav-fixed {
         height: auto;
         padding: 14px 0;
@@ -18823,11 +18826,14 @@ a.dropdown-item.active {
 
 /*---//Header-Style--*/
 
-
 /*---/Banner-Style--*/
 /*--/slider--*/
 /*--/banner--*/
 /*公司資訊分頁banner*/
+
+
+
+
 .main-slider .bannerhny-content {
     background: url(../images/banner_company_info.jpg) no-repeat center;
     -ms-background-size: cover;
@@ -18839,6 +18845,18 @@ a.dropdown-item.active {
     min-height: 400px;
     background-size: cover;
 }
+
+
+@media only screen and (max-width: 1500px){
+
+    .main-slider .bannerhny-content {
+       
+        min-height: 300px;
+       
+    }
+
+}
+
 
 /*分頁banner bg*/
 

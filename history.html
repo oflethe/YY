@@ -127,7 +127,7 @@
                     <div class="container-fluid">
                         <div class="titlearea">
                             <div class="titlearea_title"><a class="navbar-brand" href="index.html">
-                                    <span><img src="https://www.yingyi.com.tw/assets/images/icon.ico" alt="盈溢電子"> 盈溢電子</span>
+                                    <span><img src="../assets/images/icon.ico" alt="盈溢電子"> 盈溢電子</span>
                                 </a></div>
     
                             <a href="index.html" class="navbar_spanlink"><span class="fw-bold spanEn">Ying-Yi Electronics
@@ -168,7 +168,7 @@
                             aria-labelledby="offcanvasNavbarLabel">
                             <div class="offcanvas-header">
                                 <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><img
-                                        src="https://www.yingyi.com.tw/assets/images/icon.ico" alt="盈溢電子">盈溢電子</h5>
+                                        src="../assets/images/icon.ico" alt="盈溢電子">盈溢電子</h5>
                                 <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
                                     aria-label="Close"></button>
                             </div>
@@ -707,6 +707,12 @@
                 <a href="#" class="instagram"><i class="fab fa-instagram"></i></a>
             </div> -->
         </div>
+
+         <!-- Floating Contact Us Button -->
+    <div class="contact-button">
+        <a href="ContactUs.html" href="聯絡我們" target="_blank" ><i class="fa fa-phone" aria-hidden="true"></i>
+        </a>
+    </div>
         <button onclick="topFunction()" id="movetop" title="Go to top" style="display: block;">
             <span class="fa fa-angle-up"></span>
         </button>
@@ -764,7 +770,18 @@
                 }
             });
         });
+       
 
+  // 檢查視窗寬度是否大於一般手機的解析度
+  if (window.innerWidth > 768 && window.innerWidth < 1300) {
+    // 移除所有具有 data-aos 相關屬性的元素
+    document.querySelectorAll('[data-aos]').forEach(function(element) {
+        element.removeAttribute('data-aos');
+        element.removeAttribute('data-aos-duration');
+    });
+}
+
+    
     </script>
 
     <script src="assets/js/particles.js"></script>
