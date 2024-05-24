@@ -1887,7 +1887,7 @@ p.lead {
   transition: background-color 0.3s;
   writing-mode: vertical-lr; /* 將文字垂直排列 */
   font-size: 14pt;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
   
 }
 
@@ -1896,6 +1896,12 @@ p.lead {
   color: #fff;
 }
 
+.contact-text a
+{
+
+  letter-spacing: 7px;
+
+}
 
 
 @media screen and (max-width:1599px) {
