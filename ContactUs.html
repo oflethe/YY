@@ -345,22 +345,27 @@
                 <div class="container col-lg-6 col-md-12 col-sm-12">
                    
                     <form  id="res_Data">
+                         <!--公司名-->
+                         <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">公司名<span class="text-danger">*</span></label>
+                            <input type="text" class="form-control" id="CompanyArea" placeholder="(必填)" name="entry.632319400" required>
+                          </div>
                         <!--姓名-->
                         <div class="mb-3">
-                            <label for="exampleInputPassword1" class="form-label">姓名(公司寶號)</label>
-                            <input type="text" class="form-control" id="nameArea" placeholder="Name/ Company Name" name="entry.1947805121" required>
+                            <label for="exampleInputPassword1" class="form-label">姓名<span class="text-danger">*</span></label>
+                            <input type="text" class="form-control" id="nameArea" placeholder="(必填)" name="entry.1947805121" required>
                           </div>
                          <!--電話-->
                         <div class="mb-3">
-                          <label for="exampleInputEmail1" class="form-label">連絡電話</label>
-                          <input type="telephone" class="form-control" id="phoneArea" aria-describedby="phonehelp" name="entry.1010440104" required>
+                          <label for="exampleInputEmail1" class="form-label">連絡電話<span class="text-danger">*</span></label>
+                          <input type="telephone" class="form-control" id="phoneArea" placeholder="(必填)" aria-describedby="phonehelp" name="entry.1010440104" required>
                           <!-- <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div> -->
                         </div>
                         
                         <!--Email-->
                         <div class="mb-3">
                             <label for="exampleInputEmail1" class="form-label">電子信箱</label>
-                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="entry.1291538854">
+                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="(選填)" aria-describedby="emailHelp" name="entry.1291538854">
                             <!-- <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div> -->
                           </div>
 
@@ -368,7 +373,7 @@
                           <!--留言-->
                         <div class="mb-3">
                             <label for="forMessageArea" class="form-label">訊息</label>
-                            <textarea class="form-control" placeholder="Leave a Message here" id="MessageArea" style="height: 200px" name="entry.118416044"></textarea>
+                            <textarea class="form-control" placeholder="Leave a Message here"  placeholder="(選填)" id="MessageArea" style="height: 200px" name="entry.118416044"></textarea>
                            
                           </div>
 
@@ -386,60 +391,6 @@
 
 
               
-
-                <!--業務聯繫人-->
-                <div class="col-lg-12 col-md-12 col-sm-12 mt-lg-5  mt-5 d-none">
-                    <div class="row">
-                        <div class="cont-details">
-
-
-                            <div class="cont-top" >
-                                <div class="cont-left text-center">
-                                    <i class="far fa-user"></i>
-                                </div>
-
-
-                                <div class="cont-right ">
-                                    <div class="col-lg-12 col-md-12 col-sm-12">
-                                        <h6>盈溢電子業務聯絡人</h6>
-                                        <span>Contact Sales</span>
-                                        <div class="row">
-
-                                            <div class="col-lg-6 col-md-6 col-sm-6 sales sales-space">
-                                                <ul>
-                                                    <li>李新同先生</li>
-                                                    <li><a href="mailto:shawnle@yingyi.com.tw" class="mail">shawnle@yingyi.com.tw</a></li>
-                                                    <li><a href="tel:+886-3-2626123">+886-3-2626123#120</a></li>
-                                                    <li><a href="tel:0920-126-726"> 0920-126-726</a></li>
-                                                </ul>
-                                            </div>
-                                            <div class="col-lg-6 col-md-6 col-sm-6 sales sales-space">
-                                                <ul>
-                                                    <li>李振鑫先生</li>
-                                                    <li><a href="mailto:tomlee@yingyi.com.tw" class="mail">tomlee@yingyi.com.tw</a></li>
-                                                    <li><a href="tel:+886-3-2626123">+886-3-2626123#118</a></li>
-                                                    <li><a href="tel:0920-126-526"> 0920-126-526</a></li>
-                                                </ul>
-                                            </div>
-
-
-                                        </div>
-                                    </div>   
-                                        
-                              
-
-                                </div>
-
-
-                            </div>
-
-                        </div>
-                    </div>
-
-                </div>
-
-
-
 
             </div>
            
@@ -526,13 +477,18 @@
                 </div>
 
             </div>
-            <!--社群軟體-->
+           <!--社群軟體-->
             <!-- <div class="social-links text-center text-md-end pt-3 pt-md-0">
                 <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
                 <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
                 <a href="#" class="instagram"><i class="fab fa-instagram"></i></a>
             </div> -->
         </div>
+                <!-- Floating Contact Us Button -->
+    <!-- <div class="contact-button2 contact-text">
+        <a href="ContactUs.html" href="聯絡我們" target="_blank" ><i class="fa fa-envelope" aria-hidden="true"></i>聯絡我們
+        </a>
+    </div> -->
         <button onclick="topFunction()" id="movetop" title="Go to top" style="display: block;">
             <span class="fa fa-angle-up"></span>
         </button>
@@ -696,6 +652,7 @@
             var formData = {
                 "entry.1947805121": $('#nameArea').val(),
                 "entry.1010440104": $('#phoneArea').val(),
+                "entry.632319400": $('#CompanyArea').val(),
                 "entry.1291538854": $('#exampleInputEmail1').val(),
                 "entry.118416044": $('#MessageArea').val()
             };
@@ -712,7 +669,8 @@
                     $('#phoneArea').val('');
                     $('#exampleInputEmail1').val('');
                     $('#MessageArea').val('');
-                    
+                    $('#CompanyArea').val('');
+
                     // 跳轉到感謝頁面
                     window.location.replace("thank.html");
                 }
@@ -724,7 +682,7 @@
     <!-- /js for portfolio lightbox -->
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/swiper-bundle.min.js"></script>
-
+    <script src="assets/js/sweetalert.js"></script>
     <!--JS-->
 
 </body>

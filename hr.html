@@ -427,7 +427,7 @@
                                         <button class="col-lg-3 col-md-3 col-sm-6 btn btn-outline-light" type="button"
                                             data-bs-toggle="collapse" data-bs-target="#collapseTwo"
                                             aria-expanded="false" aria-controls="collapseTwo">
-                                            求職網
+                                            目前職缺
                                         </button>
                                     </p>
 
@@ -465,7 +465,9 @@
                             <div class="mt-3 accordion-body d-flex justify-content-center">
                                 <h4>歡迎優秀人才，盈溢電子期待您的加入！</h4>
                             </div>
-                            <div class="accordion-body d-flex justify-content-center">
+
+                            <div class="row container">
+                            <div class="accordion-body offset-lg-2 col-lg-4  offset-md-2 col-md-6 col-sm-12 d-flex align-items-center">
 
                                 <ul class="hrcontact">
                                     <li>管理部　鄭小姐</li>
@@ -475,6 +477,50 @@
 
 
                             </div>
+                            <div class="accordion-body col-lg-6   col-md-6 col-sm-12">
+
+                                <form  id="res_Data">
+                                   
+                                   <!--姓名-->
+                                   <div class="mb-3">
+                                       <label for="exampleInputPassword1" class="form-label">姓名<span class="text-danger">*</span></label>
+                                       <input type="text" class="form-control" id="nameArea" placeholder="" name="entry.2008243209" required>
+                                     </div>
+                                    <!--電話-->
+                                   <div class="mb-3">
+                                     <label for="exampleInputEmail1" class="form-label">連絡電話<span class="text-danger">*</span></label>
+                                     <input type="telephone" class="form-control" id="phoneArea" aria-describedby="phonehelp" name="entry.634949699" required>
+                                     <!-- <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div> -->
+                                   </div>
+                                   
+                                   <!--職缺-->
+                                   <div class="mb-3">
+                                       <label for="exampleInputEmail1" class="form-label">職缺<span class="text-danger">*</span></label>
+                                       <select class="form-select" aria-label="Default select example" name="entry.496129493" id="Job_Objective">
+                                        <option selected>請選擇</option>
+                                        <option value="生產管理師">生產管理師</option>
+                                        <option value="物料員-SMT">物料員-SMT</option>
+                                        <option value="SMT儲備幹部">SMT儲備幹部</option>
+                                        <option value="設備工程師-SMT部">設備工程師-SMT部</option>
+                                        <option value="品保經理/副理">品保經理/副理</option>
+                                        <option value="業務經理">業務經理</option>
+                                      </select>
+                                      
+                                     </div>
+           
+           
+           
+                                     
+                                   <div class="d-grid  gap-2">
+                                       <button type="submit" class="btn btn-primary" id="submitFormBtn" >送出</button>
+                                   </div>
+                                 </form>
+           
+
+                            </div>
+                        </div>
+
+
                             <div class="accordion-body d-flex justify-content-end">
                                 <button class="btn btn-outline-dark" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
@@ -686,13 +732,18 @@
                 </div>
 
             </div>
-            <!--社群軟體-->
+           <!--社群軟體-->
             <!-- <div class="social-links text-center text-md-end pt-3 pt-md-0">
                 <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
                 <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
                 <a href="#" class="instagram"><i class="fab fa-instagram"></i></a>
             </div> -->
         </div>
+                <!-- Floating Contact Us Button -->
+    <div class="contact-button2 contact-text">
+        <a href="ContactUs.html" href="聯絡我們" target="_blank" ><i class="fa fa-envelope" aria-hidden="true"></i>聯絡我們
+        </a>
+    </div>
         <button onclick="topFunction()" id="movetop" title="Go to top" style="display: block;">
             <span class="fa fa-angle-up"></span>
         </button>
@@ -752,10 +803,53 @@
 
     </script>
 
+<script>
+    $(document).ready(function() {
+        $('#res_Data').submit(function (e) {
+            // 阻止表單的默認提交行為
+            e.preventDefault();
+
+    
+            // 構建表單數據
+            var formData = {
+                "entry.2008243209": $('#nameArea').val(),
+                "entry.634949699": $('#phoneArea').val(),
+                "entry.496129493": $('#Job_Objective').val(),
+            };
+    
+            // 發送 POST 請求到 Google 表單
+            $.ajax({
+                url: "https://docs.google.com/forms/d/e/1FAIpQLSdWSX-cmVjpbTUKgdocmxl3KkWCuM8VrZKa-H_J45ZtXiQQsw/formResponse",
+                crossDomain: true,
+                data: formData,
+                type: "POST",
+                complete: function () {
+                    // 清空表單數據
+                    $('#nameArea').val('');
+                    $('#phoneArea').val('');
+                    $('#Job_Objective').val('');
+                    
+                    // 跳轉到感謝頁面
+                    //window.location.replace("thank.html");
+                    //alert('成功送出，請等候聯繫!');
+                    swal("成功送出，請等候聯繫!", "Your submission has been sent.", "success");
+                    
+                }
+            });
+        });
+    });
+
+
+ 
+ 
+
+    </script>
+
     <script src='assets/js/aos.js'></script>
     <script src="assets/js/aosindex.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/sweetalert.js"></script>
 
 
 

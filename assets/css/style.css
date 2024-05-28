@@ -1888,6 +1888,7 @@ p.lead {
   writing-mode: vertical-lr; /* 將文字垂直排列 */
   font-size: 14pt;
   letter-spacing: 2px;
+  z-index: 99999999999;
   
 }
 
