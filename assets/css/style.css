@@ -961,6 +961,77 @@ a:active {
   padding-left: 0;
 }
 
+
+/*privacy_policy*/
+
+
+#policy {
+  padding: 0;
+  overflow: hidden;
+  position: relative;
+  background-color: #fdfdfd;
+}
+
+#policy_content {
+  line-height: 15px;
+  justify-content: center;
+
+}
+
+#policy_content p {
+
+  color: #656e76;
+}
+
+#policy_content .clause {
+  font-weight: 900;
+  color: #000;
+
+}
+
+.csrshawdow {
+  padding: 25px;
+  box-shadow: 5px 0px 10px rgba(0, 0, 0, 10%);
+}
+
+#policy_content h2
+{
+
+color:#0643b4;
+font-weight: bold;
+
+}
+
+#policy_content h3
+{
+
+color:#0643b4;
+font-size: 16pt;
+font-weight: bold;
+
+}
+
+#policy_content ul
+{
+  line-height: 20pt;
+
+}
+
+#policy_content li
+{
+
+color: #656e76;
+list-style-type:auto;
+
+}
+
+.privacyspan
+{
+font-size: 10pt;
+color: #656e76;
+}
+
+
 /*csr*/
 
 
@@ -1888,7 +1959,6 @@ p.lead {
   writing-mode: vertical-lr; /* 將文字垂直排列 */
   font-size: 14pt;
   letter-spacing: 2px;
-  z-index: 99999999999;
   
 }
 

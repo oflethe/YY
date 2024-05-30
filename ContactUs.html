@@ -49,6 +49,11 @@
 
  <meta name="google-site-verification" content="Mb_UtU3A-9o4UV1lcOBr0QENIeM6CPkPuSuAQd4REX8" />
 
+ 
+ <!-- google bot -->
+ <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+ 
+
 
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-VWMX85KWV8"></script>
@@ -102,6 +107,8 @@
     }
 </script>    
 <!--Data-->
+
+
 
 </head>
 
@@ -348,17 +355,17 @@
                          <!--公司名-->
                          <div class="mb-3">
                             <label for="exampleInputPassword1" class="form-label">公司名<span class="text-danger">*</span></label>
-                            <input type="text" class="form-control" id="CompanyArea" placeholder="(必填)" name="entry.632319400" required>
+                            <input type="text" class="form-control" id="CompanyArea" placeholder="(必填)" name="entry.632319400">
                           </div>
                         <!--姓名-->
                         <div class="mb-3">
-                            <label for="exampleInputPassword1" class="form-label">姓名<span class="text-danger">*</span></label>
-                            <input type="text" class="form-control" id="nameArea" placeholder="(必填)" name="entry.1947805121" required>
+                            <label for="exampleInputPassword1" class="form-label">聯絡人姓名<span class="text-danger">*</span></label>
+                            <input type="text" class="form-control" id="nameArea" placeholder="(必填)" name="entry.1947805121">
                           </div>
                          <!--電話-->
                         <div class="mb-3">
                           <label for="exampleInputEmail1" class="form-label">連絡電話<span class="text-danger">*</span></label>
-                          <input type="telephone" class="form-control" id="phoneArea" placeholder="(必填)" aria-describedby="phonehelp" name="entry.1010440104" required>
+                          <input type="telephone" class="form-control" id="phoneArea" placeholder="(必填)" aria-describedby="phonehelp" name="entry.1010440104">
                           <!-- <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div> -->
                         </div>
                         
@@ -373,14 +380,21 @@
                           <!--留言-->
                         <div class="mb-3">
                             <label for="forMessageArea" class="form-label">訊息</label>
-                            <textarea class="form-control" placeholder="Leave a Message here"  placeholder="(選填)" id="MessageArea" style="height: 200px" name="entry.118416044"></textarea>
+                            <textarea class="form-control" placeholder="留下您的訊息(選填)" id="MessageArea" style="height: 200px" name="entry.118416044"></textarea>
                            
                           </div>
 
-                          
+                          <!-- <div class="g-recaptcha" data-sitekey="6LcNJOopAAAAAHwsoqcXmm7_bFOv5r6hyTtAebMo"></div> -->
+
                         <div class="d-grid  gap-2">
                             <button type="submit" class="btn btn-primary" id="submitFormBtn" >送出</button>
                         </div>
+
+                        <div class="mt-3 text-center">
+                            <span class="privacyspan">您的詳細資訊將在我們的資料庫中註冊。請檢視我們的<a href="../privacy_policy.html" title="隱私權政策">隱私權政策</a>以獲取更多資訊。</span>
+                        </div>
+                       
+                        
                       </form>
 
                 </div>
@@ -647,9 +661,28 @@
             // 阻止表單的默認提交行為
             e.preventDefault();
 
-    
-            // 構建表單數據
-            var formData = {
+            if($('#CompanyArea').val()==="")
+            {
+
+                swal ( "請填寫公司名稱!" ,  "" ,  "warning" )
+
+            }
+            else if($('#nameArea').val()==="")
+            {
+                swal ( "請填寫聯絡人!" ,  "" ,  "warning" )
+
+            }
+            else if($('#phoneArea').val()==="")
+            {
+
+                swal ( "請填寫連絡電話!" ,  "" ,  "warning" )
+            }
+            else
+            {
+
+
+// 構建表單數據
+var formData = {
                 "entry.1947805121": $('#nameArea').val(),
                 "entry.1010440104": $('#phoneArea').val(),
                 "entry.632319400": $('#CompanyArea').val(),
@@ -675,6 +708,9 @@
                     window.location.replace("thank.html");
                 }
             });
+
+            }
+            
         });
     });
     </script>
