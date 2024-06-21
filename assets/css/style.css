@@ -803,6 +803,16 @@ a:active {
 
 
 
+.mesback
+{
+
+  background: url(../images/mesback03.jpg) no-repeat top center/cover;
+  padding: 15px 0 10px 0;
+  text-align: center;
+
+}
+
+
 
 /*--//hr--*/
 
@@ -828,6 +838,15 @@ a:active {
   font-size: 20px;
   font-weight: 600;
   color: var(--primary-color);
+}
+
+
+
+.hr-member,
+.mes-img {
+  position: relative;
+  overflow: hidden;
+  height: 435px;
 }
 
 
@@ -897,6 +916,11 @@ a:active {
 .hr-img .overlay {
   opacity: 1;
 }
+
+.mes-img .overlay {
+  opacity: 1;
+}
+
 
 .socials a {
   display: inline-block;
